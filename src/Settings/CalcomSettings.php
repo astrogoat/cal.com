@@ -2,9 +2,9 @@
 
 namespace Astrogoat\Calcom\Settings;
 
+use Astrogoat\Calcom\Actions\CalcomAction;
 use Helix\Lego\Settings\AppSettings;
 use Illuminate\Validation\Rule;
-use Astrogoat\Calcom\Actions\CalcomAction;
 
 class CalcomSettings extends AppSettings
 {

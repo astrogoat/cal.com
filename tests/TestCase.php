@@ -2,9 +2,9 @@
 
 namespace Astrogoat\Calcom\Tests;
 
+use Astrogoat\Calcom\CalcomServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Astrogoat\Calcom\CalcomServiceProvider;
 
 class TestCase extends Orchestra
 {

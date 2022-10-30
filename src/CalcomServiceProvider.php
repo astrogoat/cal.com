@@ -2,12 +2,12 @@
 
 namespace Astrogoat\Calcom;
 
+use Astrogoat\Calcom\Settings\CalcomSettings;
 use Helix\Lego\Apps\App;
 use Helix\Lego\Apps\Services\IncludeFrontendViews;
 use Helix\Lego\LegoManager;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Astrogoat\Calcom\Settings\CalcomSettings;
 
 class CalcomServiceProvider extends PackageServiceProvider
 {
