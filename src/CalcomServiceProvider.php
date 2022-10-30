@@ -3,6 +3,7 @@
 namespace Astrogoat\Calcom;
 
 use Helix\Lego\Apps\App;
+use Helix\Lego\Apps\Services\IncludeFrontendViews;
 use Helix\Lego\LegoManager;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
@@ -19,8 +20,13 @@ class CalcomServiceProvider extends PackageServiceProvider
                 __DIR__ . '/../database/migrations',
                 __DIR__ . '/../database/migrations/settings',
             ])
-            ->backendRoutes(__DIR__.'/../routes/backend.php')
-            ->frontendRoutes(__DIR__.'/../routes/frontend.php');
+            ->includeFrontendViews(function (IncludeFrontendViews $frontendViews) {
+                return $frontendViews
+                    ->addToEnd([
+                        'calcom::popup',
+                        'calcom::floating-button',
+                    ]);
+            });
     }
 
     public function registeringPackage()
