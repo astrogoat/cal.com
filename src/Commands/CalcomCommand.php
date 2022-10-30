@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Astrogoat\Calcom\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class CalcomCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'calcom';
 
     public $description = 'My command';
 
